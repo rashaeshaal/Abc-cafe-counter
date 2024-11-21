@@ -1,0 +1,16 @@
+<div class="counter-container">
+    <div class="counter-header">
+      <h1>Welcome to <span class="highlight">ABC Cafe</span></h1>
+      <h3>{{ currentDate }}</h3>
+    </div>
+  
+    <div class="counter-content">
+      <input
+        [(ngModel)]="customerName"
+        class="name-input"
+        placeholder="Enter your name"
+      />
+      <button class="order-button" (click)="askOrder()">Ask Order</button>
+    </div>
+  </div>
+  

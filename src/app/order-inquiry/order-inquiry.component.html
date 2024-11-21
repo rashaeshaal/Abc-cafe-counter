@@ -1,0 +1,26 @@
+<div class="order-inquiry-container">
+  <h2 class="greeting-text">Hello, {{ customerName }}!</h2>
+
+  <div *ngIf="!orderStarted" class="welcome-message">
+    <p>What would you like to order today?</p>
+    <button class="start-button" (click)="startOrder()">Start Your Order</button>
+  </div>
+
+  <div *ngIf="orderStarted" class="order-selection">
+    <p class="order-selection-title">Select your beverages:</p>
+    <div class="beverage-list">
+      <div class="beverage-item" *ngFor="let product of products">
+        <h3 class="beverage-name">{{ product.name }}</h3>
+        <p class="beverage-price">${{ product.price.toFixed(2) }}</p>
+        <button
+          class="select-button"
+          [class.selected]="isSelected(product)"
+          (click)="toggleSelection(product)"
+        >
+          {{ isSelected(product) ? 'Unselect' : 'Choose' }}
+        </button>
+      </div>
+    </div>
+    <button class="confirm-button" (click)="proceedToPlaceOrder()">Place Order</button>
+  </div>
+</div>

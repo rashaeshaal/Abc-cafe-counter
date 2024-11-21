@@ -1,0 +1,82 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #f9f9f9, #ececec);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .counter-header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .counter-header .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  .counter-header h3 {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .counter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 250px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .name-input:focus {
+    border: 2px solid #ff6600;
+  }
+  
+  .order-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #e65c00;
+  }
+  
+  .order-button:active {
+    transform: scale(0.98);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .counter-container {
+      padding: 20px;
+    }
+  
+    .name-input {
+      width: 100%;
+    }
+  
+    .order-button {
+      width: 100%;
+    }
+  }
+  

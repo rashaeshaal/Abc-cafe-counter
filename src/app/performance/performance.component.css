@@ -1,0 +1,127 @@
+
+.review-performance-container {
+  margin-top: 20px;
+  padding: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1), -3px -3px 8px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.review-performance-container:hover {
+  transform: scale(1.02);
+}
+
+h3 {
+  color: #444;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.review-statistics {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 15px 0;
+}
+
+.review-statistics p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.review-statistics .good {
+  color: #4caf50;
+}
+
+.review-statistics .average {
+  color: #ff9800;
+}
+
+.review-statistics .poor {
+  color: #f44336;
+}
+
+.show-stats-btn {
+  background: linear-gradient(145deg, #6bcf75, #4caf50);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.show-stats-btn:hover {
+  background: linear-gradient(145deg, #5abf65, #45a049);
+  transform: translateY(-2px);
+}
+
+.show-stats-btn:active {
+  transform: translateY(0);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+
+.performance-message {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+
+.view-performance-btn {
+  background: linear-gradient(145deg, #4b99f7, #2176f3);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.view-performance-btn:hover {
+  background: linear-gradient(145deg, #3a85d6, #1a63c7);
+  transform: translateY(-2px);
+}
+
+.view-performance-btn:active {
+  transform: translateY(0);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .review-statistics {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-statistics p {
+    margin-bottom: 10px;
+  }
+
+  .show-stats-btn,
+  .view-performance-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

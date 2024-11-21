@@ -1,0 +1,17 @@
+<div *ngIf="reviewStats" class="review-performance-container">
+  <h3>Review Statistics</h3>
+  <div class="review-statistics">
+    <p class="good">Good: {{ reviewStats.good }}</p>
+    <p class="average">Average: {{ reviewStats.average }}</p>
+    <p class="poor">Poor: {{ reviewStats.poor }}</p>
+  </div>
+  <button class="show-stats-btn" (click)="showReviewStats()">Show Review Counts</button>
+</div>
+
+<div *ngIf="performanceMessage" class="review-performance-container">
+  <h3>Performance Message</h3>
+  <div class="performance-message">
+    <p>{{ performanceMessage }}</p>
+  </div>
+</div>
+

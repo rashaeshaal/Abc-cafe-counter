@@ -1,0 +1,100 @@
+.beverage-selection-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.beverage-selection-container h3 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.beverage-selection-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item h4 {
+  margin: 0;
+  color: #555;
+  font-size: 18px;
+}
+
+.product-item p {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.product-item button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: #0056b3;
+}
+
+.beverage-selection-container h4 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 20px;
+}
+
+.beverage-selection-container ul li {
+  padding: 8px 10px;
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .beverage-selection-container {
+    padding: 15px;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-item button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+

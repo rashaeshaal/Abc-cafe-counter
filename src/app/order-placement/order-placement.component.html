@@ -1,0 +1,11 @@
+<div class="order-placement-container">
+  <h2>Welcome, {{ customerName }}!</h2>
+  <p>Your selected beverages:</p>
+  <ul>
+    <li *ngFor="let beverage of selectedBeverages">
+      {{ beverage.name }} - ${{ beverage.price.toFixed(2) }}
+    </li>
+  </ul>
+  <p><strong>Total Amount:</strong> ${{ totalAmount.toFixed(2) }}</p>
+  <button class="confirm-button" (click)="placeOrder()">Place Order</button>
+</div>

@@ -1,0 +1,8 @@
+<div class="review-container">
+  <h3>Please rate your experience with Order: {{ orderId }}</h3>
+  <div class="review-buttons">
+    <button (click)="submitReview('Good')" class="btn-good">Good</button>
+    <button (click)="submitReview('Average')" class="btn-average">Average</button>
+    <button (click)="submitReview('Poor')" class="btn-poor">Poor</button>
+  </div>
+</div>

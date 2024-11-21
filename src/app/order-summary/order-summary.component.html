@@ -1,0 +1,31 @@
+<div class="order-summary-container">
+  <h2>Order Summary for {{ customerName }}</h2>
+  <ul>
+    <li *ngFor="let order of currentCustomerOrders; let i = index">
+      <div class="order-details">
+        <strong>Order {{ i + 1 }}</strong>: {{ formatBeverages(order.beverages) }} - Total: ₹{{ calculateTotal(order.beverages) }}
+      </div>
+
+    
+      <div *ngIf="!order.reviewed" class="review-buttons">
+        <button (click)="submitFeedback(order, 'Good')" class="btn-good">Good</button>
+        <button (click)="submitFeedback(order, 'Average')" class="btn-average">Average</button>
+        <button (click)="submitFeedback(order, 'Poor')" class="btn-poor">Poor</button>
+      </div>
+
+    
+      <div *ngIf="order.reviewed" class="thank-you">
+        <p>Thank you for your feedback!</p>
+        <button class="thank-you-btn">Return to Orders</button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="grand-total">
+    <h3>Grand Total: ₹{{ grandTotal }}</h3>
+  </div>
+
+
+  <button (click)="togglePerformance()" class="view-performance">View Performance</button>
+  <app-performance *ngIf="showPerformance"></app-performance>
+</div>

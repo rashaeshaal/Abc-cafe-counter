@@ -1,0 +1,33 @@
+.review-container {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-good {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .btn-average {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+  }
+  
+  .btn-poor {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  

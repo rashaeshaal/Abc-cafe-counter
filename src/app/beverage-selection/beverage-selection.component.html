@@ -1,0 +1,22 @@
+<div class="beverage-selection-container">
+    <h3>Select your beverages:</h3>
+    <ul>
+      <li *ngFor="let product of products">
+        <div class="product-item">
+          <h4>{{ product.name }}</h4>
+          <p>Price: ${{ product.price }}</p>
+          <button (click)="selectBeverage(product)">Select</button>
+        </div>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedBeverages.length > 0">
+      <h4>Your selected beverages:</h4>
+      <ul>
+        <li *ngFor="let selected of selectedBeverages">
+          {{ selected.name }} - ${{ selected.price }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
